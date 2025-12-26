@@ -6,45 +6,44 @@ This repository contains code for automatic segmentation of brain hemorrhages fr
 
 ### *Features*
 
-Supervised segmentation using U-Net architecture.
+- Supervised segmentation using U-Net architecture.
 
-Self-supervised pretraining using Masked Autoencoders (MAE) to learn robust representations from unlabeled brain scans.
+- Self-supervised pretraining using Masked Autoencoders (MAE) to learn robust representations from unlabeled brain scans.
 
-Fine-tuning pretrained encoder for hemorrhage segmentation.
+- Fine-tuning pretrained encoder for hemorrhage segmentation.
 
-Visualization of predicted masks over input scans.
+- Visualization of predicted masks over input scans.
 
 Designed for limited labeled data scenarios common in medical imaging.
 
 ### *Dataset*
 
-CT or MRI brain scans with hemorrhage annotations.
+- CT or MRI brain scans with hemorrhage annotations.
 
-Preprocessing includes resizing, normalization, and augmentations (rotations, flips, noise).
+- Preprocessing includes resizing, normalization, and augmentations (rotations, flips, noise).
 
 ### *Methodology*
 
-Data Preprocessing: Convert images, normalize intensities, apply augmentations.
+- Data Preprocessing: Convert images, normalize intensities, apply augmentations.
 
-Self-Supervised Pretraining: Train encoder on unlabeled scans for feature extraction.
+- Self-Supervised Pretraining: Train encoder on unlabeled scans for feature extraction.
 
-Supervised Segmentation: Fine-tune encoder with decoder on labeled dataset.
+- Supervised Segmentation: Fine-tune encoder with decoder on labeled dataset.
 
-Evaluation: Dice coefficient, IoU, precision, recall.
+- Evaluation: Dice coefficient, IoU, precision, recall.
 
-Optional Deployment: Flask/Streamlit app for clinical demonstration.
 
 ### *Technologies*
 
-Python, TensorFlow/Keras or PyTorch
+- Python, TensorFlow/Keras or PyTorch
 
-OpenCV, NumPy, Albumentations
+- OpenCV, NumPy, Albumentations
 
-Matplotlib, Seaborn for visualization
+- Matplotlib, Seaborn for visualization
 
 
-###*Results*
+### *Results*
 
-Accurate segmentation of brain hemorrhage regions.
+- Accurate segmentation of brain hemorrhage regions.
 
-Demonstrates how SSL improves performance with limited labeled data.
+- Demonstrates how SSL improves performance with limited labeled data.
